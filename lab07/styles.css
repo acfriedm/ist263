@@ -1,9 +1,9 @@
 body {background-color: #FFEEF4;}
 body {color: #AEC3AE;}
-a:link {color: #618264}
+a:link {color: #618264;}
 h1, h2 {color: #94A684;}
 nav {background-color: #efefef;}
-nav a {color: #618264}
+nav a {color: #618264;}
 nav a:hover{background-color:#79AC78 ;}
-a {padding: 10px;}
+nav {padding: 10px;}
 nav {margin-bottom: 30px;}
