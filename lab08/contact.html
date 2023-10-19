@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .row1, .row2 {display: flex; 
+                        background-color: #efefef; 
+                        border-radius: 1em;
+                        margin: 30px;
+                        }
+            .r1c1, .r1c2, .r2c1, .r2c2 {padding: 50px;}
+            .r1c1 {flex: 1;}
+            .r1c2{flex: 3;}
+            .r2c1 {flex: 1;}
+            .r2c2{flex: 3;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home | </a>
+            <a href="contact.html">Contact | </a>
+            <a href="skills.html">Skills</a>
+          </nav> 
+        <h1>Contact</h1>
+        <div class="row1">
+            <div class="r1c1"> 
+                <h2>Address</h2>       
+                <p>Ari Friedman<br>
+                417 Comstock Ave<br>
+                Syracuse, NY 13210
+                </p>
+            </div>
+            <div class="r1c2">
+                <p> <a href="mailto:acfriedm@syr.edu" target="_blank">acfriedm@syr.edu</a></p>
+                <p><a href="https://www.linkedin.com/in/acfriedman/" target="_blank">My LinkedIn Profile</a><br>
+                <img src="../images/logo_sized.png" alt="linkedin linkedin_logo">
+                </p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="r2c1">       
+                <form action="https://formspree.io/f/mgejnnvz" method="POST">
+                <label for="fullname"><strong>Full Name:</strong></label><br>
+                <input type="text" id="fullname" name="Full Name"> <br> <!-- block go to the next line and have margin around them, in line stay in one line-->
+    
+                <p><strong>On a scale from 1-5, how helpful was this content? (1 not helpful, 5 very helpful)</strong></p>
+                <input type="radio" id="1" name="helpful" value="1">
+                <label for="1">1</label><br>
+                <input type="radio" id="2" name="helpful" value="2">
+                <label for="2">2</label><br>
+                <input type="radio" id="3" name="helpful" value="3">
+                <label for="3">3</label><br>
+                <input type="radio" id="4" name="helpful" value="4">
+                <label for="4">4</label><br>
+                <input type="radio" id="5" name="helpful" value="5">
+                <label for="5">5</label><br><br>
+    
+                <label for="comments"><strong>Leave comments here:</strong></label><br>
+                <textarea id="comments" name="comments" rows="3" cols="60">
+                </textarea><br>
+    
+                <input type="submit" value="Send Form">
+    
+                </form></div>
+            <div class="r2c2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.9694205710834!2d-76.13255792382579!3d43.042074891741706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f30af9fc5e21%3A0x1f9bfdba6327baf8!2sPark%20Point!5e0!3m2!1sen!2sus!4v1694716480214!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </body>
+
