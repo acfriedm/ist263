@@ -1,0 +1,50 @@
+body {background-color: #FFEEF4;}
+body {color: #AEC3AE;}
+a:link {color: #618264;}
+h1, h2 {color: #94A684;}
+nav {background-color: #efefef;}
+nav a {color: #618264;}
+nav a:hover{background-color:#79AC78 ;}
+nav {padding: 10px;}
+nav {margin-bottom: 30px;}
+h1{text-align: center;}
+.icon{width: 100px;}
+.skills{display:flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 50px;
+    }
+.other{background-color: #efefef ;
+        border-radius: 1em;
+        padding: 20px;
+    }
+.flex2{display:flex;}
+.col1{flex-basis: 75%;}
+.col2{flex-basis: 25%;}
+.skillsp{padding-left: 50px;
+    padding-right: 50px;
+    }
+.img1{max-width: 100%;}
+.row1, .row2{flex-wrap: wrap;}
+.comments{width: 100%;}
+
+@media only screen and (max-width: 800px) {
+    nav a {display: 100%;
+        display:block;
+        margin: 10px;
+    }
+    span {display:none}
+    } 
+
+.skip{
+    background-color: #c9b3c2;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration:none;
+    position: absolute; /*position an element relative to the top left of the viewport */
+    top: 10px;
+    left: -999px; /* -999 pushes off the left side of the screen */
+}
+.skip:focus {
+    left: 10px; /* bring it back when it's beem tabbed to */
+}
