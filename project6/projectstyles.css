@@ -1,6 +1,14 @@
 nav{display: flex;
     font-size: 1em;
 }
+nav a{
+    padding: 10px;
+    justify-content: right;
+    font-size: 1.5em;
+}
+nav img{
+    justify-content: left;
+}
 
 .blog{
     display: flex;
@@ -26,3 +34,25 @@ img{
     font-size: 1.2em;
 }
 
+h1, h2, a {
+    color: #000E54;
+}
+
+footer img {
+    width: 5%;
+    max-width: 100%;
+}
+footer div{
+    display: flex;
+}
+.footerimg {
+    display:flex;
+    justify-content: right;
+}
+
+@media only screen and (max-width: 800px) {
+    nav a {display: 100%;
+        display:block;
+        margin: 10px;
+    }
+    } 
