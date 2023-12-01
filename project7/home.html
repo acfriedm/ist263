@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuse Cooks</title>
+    <link rel="stylesheet" href="projectstyles.css">
+</head>
+<script>
+    function ImagesOff () {
+        document.getElementById('pasta').style.display = 'none';
+        document.getElementById('acai').style.display = 'none';
+        document.getElementById('gelato').style.display = 'none';
+        document.getElementById('hummus').style.display = 'none';
+        document.getElementById('pasta2').style.display = 'none';
+        document.getElementById('pizza').style.display = 'none';
+        document.getElementById('sabich').style.display = 'none';
+        document.getElementById('strawberry').style.display = 'none';
+        document.getElementById('stroop').style.display = 'none';
+        document.getElementById('watermelon').style.display = 'none';
+    }
+    function PastaOn () {
+            document.getElementById('pasta').style.display = 'block';
+        }
+    function AcaiOn () {
+        document.getElementById('acai').style.display = 'block';
+    }
+    function GelatoOn () {
+        document.getElementById('gelato').style.display = 'block';
+    }
+    function HummusOn () {
+        document.getElementById('hummus').style.display = 'block';
+    }
+    function Pasta2On () {
+        document.getElementById('pasta2').style.display = 'block';
+    }
+    function PizzaOn () {
+        document.getElementById('pizza').style.display = 'block';
+    }
+    function SabichOn () {
+        document.getElementById('sabich').style.display = 'block';
+    }
+    function StrawberryOn () {
+        document.getElementById('strawberry').style.display = 'block';
+    }
+    function StroopOn () {
+        document.getElementById('stroop').style.display = 'block';
+    }
+    function WatermelonOn () {
+        document.getElementById('watermelon').style.display = 'block';
+    }
+</script>
+<body>
+    <nav>
+        <div class="navimg">
+            <a href="home.html"><img src="media/cusecookslogo.png" alt="Cuse Cooks logo"></a>
+        </div>
+        <div class="navlinks">
+            <a href="home.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="resources.html">Resources</a>
+        </div>
+    </nav> 
+    <hr>
+    <h1>Welcome to Cuse Cooks!</h1>
+    <h2>A blog about your college kitchen.</h3>
+    <p>
+        Whether you live on- or off-campus, I’ve got you covered. This blog is all about how to live a healthy 
+        college lifestyle from eating at the dining hall to grocery shopping on a budget to Sunday meal prepping.
+        Also check out my resource page to learn more about food insecurity in Syracuse and how you can give 
+        back to the local community.
+    </p>
+    <h2>Who is the Chef behind Cuse Cooks?</h2>
+    <section class="bio">
+        <div class="bioimg">
+            <img src="media/arifriedman.png" alt="Ari Friedman Headshot">
+        </div>
+        <div class="bioinfo">
+            <p>
+                Hi, I’m Ari! I am a senior at Syracuse University studying Information Management and Technology with 
+                a concentration in Web Design and minor in Public Communications.
+            </p>
+            <p>
+                My biggest passion in life is food.
+            </p>
+            <p>
+                Over the last year and a half, I had two amazing opportunities to spend time abroad which has 
+                strengthened my love for cookie, baking, and eating while expanding my palette across various cuisines.
+                I spent the summer between my sophomore and junior year in Tel Aviv, Israel while interning for a food
+                touring company. This spring I spent the semester studying abroad in Florence, Italy, and had the 
+                opportunity to travel to 11 different countries. A a passionate foodie, I was determined to experience
+                different cultures through food. Every place I visited, I sought after their most popular dish: schnitzel in 
+                Austria, paella in Spain, Bolognese in Italy… you get the idea! Bascially, I love food, and I want to share 
+                that with you!
+            </p>
+        </div>
+    </section>
+    <!--this will be a slideshow of images --> 
+    <h2 class="center">Phone Eats First Slideshow</h2>
+    <section id="slideshow">
+        <img src="media/pasta1.png" alt="Penne alla vodka" id="pasta">
+        <img src="media/acai.png" alt="Acai bowl in a smoothie cup" id="acai">
+        <img src="media/gelato.png" alt="Gelato in a cup" id="gelato"> 
+        <img src="media/hummus.png" alt="Bowl of hummus with fresh herbs" id="hummus">
+        <img src="media/pasta2.png" alt="Fettuccine with cream sauce" id="pasta2">
+        <img src="media/pizza.png" alt="Large Cheese Pizza" id="pizza">
+        <img src="media/sabich.png" alt="Sabich in a pita" id="sabich">
+        <img src="media/strawberry.png" alt="Fresh strawberries" id="strawberry">
+        <img src="media/stroop.png" alt="Stroop Waffle" id="stroop" >
+        <img src="media/watermelon.png" alt="Fresh, cut watermelon" id="watermelon">
+    </section>
+    <div id="thumbnails">
+        <img src="media/pasta1.png" alt="Penne alla vodka" onclick="ImagesOff(); PastaOn ();">
+        <img src="media/acai.png" alt="Acai bowl in a smoothie cup" onclick="ImagesOff(); AcaiOn ();">
+        <img src="media/gelato.png" alt="Gelato in a cup" onclick="ImagesOff (); GelatoOn ();"> 
+        <img src="media/hummus.png" alt="Bowl of hummus with fresh herbs" onclick="ImagesOff(); HummusOn ();">
+        <img src="media/pasta2.png" alt="Fettuccine with cream sauce" onclick="ImagesOff(); Pasta2On ();">
+        <img src="media/pizza.png" alt="Large Cheese Pizza" onclick="ImagesOff(); PizzaOn ();">
+        <img src="media/sabich.png" alt="Sabich in a pita" onclick="ImagesOff(); SabichOn ();">
+        <img src="media/strawberry.png" alt="Fresh strawberries" onclick="ImagesOff(); StrawberryOn ();">
+        <img src="media/stroop.png" alt="Stroop Waffle" onclick="ImagesOff(); StroopOn ();">
+        <img src="media/watermelon.png" alt="Fresh, cut watermelon" onclick="ImagesOff(); WatermelonOn ();">
+    </div>
+    <hr>
+    <footer>
+        <div class="footerimg">
+            <h4><a href="https://www.instagram.com/arifriedmann/" target="_blank">Follow me</a></h4><br>
+            <img src="media/instagram.png" alt="Instagram Logo">
+            <h4><a href="mailto:acfriedm@syr.edu" target="_blank">Contact Me</a></h4><br>
+            <img src="media/email.png" alt="Email icon">
+        </div>
+        <div>
+            &#64;2023 Cuse Cooks
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+nav{display: flex;
+    font-size: 1em;
+}
+.navlinks{
+    padding: 10px;
+    justify-content: right;
+    font-size: 1.2em;
+}
+nav img{
+    justify-content: left;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blog{
+    display: flex;
+}
+img{
+    width: 50%;
+    max-width: 100%;
+ }
+.blogimg{
+    flex-basis: 40%;
+    text-align: right;
+    margin: 2em;
+
+}
+.blogtext{
+    flex-basis: 60%;
+    margin-right: 15%;
+}
+.blogtitle{
+    font-size: 2em;
+}
+.blogdescription{
+    font-size: 1.2em;
+}
+
+h1, h2, a {
+    color: #000E54;
+}
+
+footer img {
+    width: 5%;
+    max-width: 100%;
+}
+footer div{
+    display: flex;
+}
+.footerimg {
+    display:flex;
+    justify-content: right;
+}
+
+@media only screen and (max-width: 800px) {
+    nav a {display: 100%;
+        display:block;
+        margin: 10px;
+    }
+    } 
+
+.bio {
+    display: flex;
+}
+.bioimg {
+    flex: 40%;
+
+}
+.bioinfo {
+    flex: 60%;
+}
+#slideshow{
+    text-align: center;
+}
+#thumbnails {
+    display: flex;
+    width: 100px;
+}
+#thumbnails img {
+    justify-content: space-around;
+}
+
+#acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {display: none;}
+.resources{
+    display:flex;
+}
+
+.center {
+    text-align: center;
+}
