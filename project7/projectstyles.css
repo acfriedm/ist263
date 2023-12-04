@@ -6,7 +6,7 @@ nav{display: flex;
     justify-content: right;
     font-size: 1.2em;
 }
-nav img{
+.navimg{
     justify-content: left;
 }
 
@@ -66,14 +66,17 @@ footer div{
     display: flex;
 }
 .bioimg {
-    flex: 40%;
+    flex: 50%;
+    max-width: 1200px;
+    text-align: center;
 
 }
 .bioinfo {
-    flex: 60%;
+    flex: 50%;
 }
 #slideshow{
     text-align: center;
+    max-width: 800px;
 }
 #thumbnails {
     display: flex;
