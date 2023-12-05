@@ -26,6 +26,7 @@ img{
     flex-basis: 40%;
     text-align: right;
     margin: 2em;
+    width: 100%
 
 }
 .blogtext{
@@ -80,10 +81,10 @@ footer div{
 }
 #thumbnails {
     display: flex;
-    width: 100px;
+    width: 200px;
 }
 #thumbnails img {
-    justify-content: space-around;
+    margin: 10px;
 }
 
 #acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {display: none;}
