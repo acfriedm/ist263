@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuse Cooks</title>
     <link rel="stylesheet" href="projectstyles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script>
         function ImagesOff () {
             document.getElementById('pasta').style.display = 'none';
@@ -71,56 +75,54 @@
         back to the local community.
     </p>
     <h2>Who is the Chef behind Cuse Cooks?</h2>
-    <section class="bio">
-        <div class="bioimg">
-            <img src="media/arifriedman.jpg" alt="Ari Friedman Headshot">
-        </div>
-        <div class="bioinfo">
-            <p>
-                Hi, I’m Ari! I am a senior at Syracuse University studying Information Management and Technology with 
-                a concentration in Web Design and minor in Public Communications.
-            </p>
-            <p>
-                My biggest passion in life is food.
-            </p>
-            <p>
-                Over the last year and a half, I had two amazing opportunities to spend time abroad which has 
-                strengthened my love for cooking, baking, and eating while expanding my palette across various cuisines.
-                I spent the summer between my sophomore and junior year in Tel Aviv, Israel while interning for a food
-                touring company. This spring I spent the semester studying abroad in Florence, Italy, and had the 
-                opportunity to travel to 11 different countries. A a passionate foodie, I was determined to experience
-                different cultures through food. Every place I visited, I sought after their most popular dish: schnitzel in 
-                Austria, paella in Spain, Bolognese in Italy… you get the idea! Bascially, I love food, and I want to share 
-                that with you!
-            </p>
-        </div>
-    </section>
+    <main class="bio">
+        <img src="media/arifriedman.jpg" alt="Ari Friedman Headshot" class="bioimg">
+        <h2 class="bioinfo">Hi, I'm Ari!</h2>
+        <p class="bioinfo">
+            I am a senior at Syracuse University studying Information Management and Technology with 
+            a concentration in Web Design and minor in Public Communications.
+        </p>
+        <h2 class="bioinfo">My biggest passion in life is food.</h2>
+        <p class="bioinfo">
+            Over the last year and a half, I had two amazing opportunities to spend time abroad which has 
+            strengthened my love for cooking, baking, and eating while expanding my palette across various cuisines.
+            I spent the summer between my sophomore and junior year in Tel Aviv, Israel while interning for a food
+            touring company. This spring I spent the semester studying abroad in Florence, Italy, and had the 
+            opportunity to travel to 11 different countries. A a passionate foodie, I was determined to experience
+            different cultures through food. Every place I visited, I sought after their most popular dish: schnitzel in 
+            Austria, paella in Spain, Bolognese in Italy… you get the idea! Bascially, I love food, and I want to share 
+            that with you!
+        </p>
+    </main>
     <!--this will be a slideshow of images --> 
-    <h2 class="center">Phone Eats First Slideshow</h2>
-    <section id="slideshow">
-        <img src="media/pasta1.jpg" alt="Penne alla vodka" id="pasta">
-        <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" id="acai">
-        <img src="media/gelato.jpg" alt="Gelato in a cup" id="gelato"> 
-        <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" id="hummus">
-        <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" id="pasta2">
-        <img src="media/pizza.jpg" alt="Large Cheese Pizza" id="pizza">
-        <img src="media/sabich.jpg" alt="Sabich in a pita" id="sabich">
-        <img src="media/strawberry.jpg" alt="Fresh strawberries" id="strawberry">
-        <img src="media/stroop.jpg" alt="Stroop Waffle" id="stroop" >
-        <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" id="watermelon">
+    <section class="slideshow">
+        <h2 class="slidehead">Phone Eats First Slideshow</h2>
+        <section id="slideshowimg">
+            <img src="media/pasta1.jpg" alt="Penne alla vodka" id="pasta">
+            <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" id="acai">
+            <img src="media/gelato.jpg" alt="Gelato in a cup" id="gelato"> 
+            <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" id="hummus">
+            <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" id="pasta2">
+            <img src="media/pizza.jpg" alt="Large Cheese Pizza" id="pizza">
+            <img src="media/sabich.jpg" alt="Sabich in a pita" id="sabich">
+            <img src="media/strawberry.jpg" alt="Fresh strawberries" id="strawberry">
+            <img src="media/stroop.jpg" alt="Stroop Waffle" id="stroop" >
+            <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" id="watermelon">
+        </section>
+        <div id="thumbnails">
+            <img src="media/pasta1.jpg" alt="Penne alla vodka" onclick="ImagesOff(); PastaOn ();">
+            <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" onclick="ImagesOff(); AcaiOn ();">
+            <img src="media/gelato.jpg" alt="Gelato in a cup" onclick="ImagesOff (); GelatoOn ();"> 
+            <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" onclick="ImagesOff(); HummusOn ();">
+            <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" onclick="ImagesOff(); Pasta2On ();">
+            <img src="media/pizza.jpg" alt="Large Cheese Pizza" onclick="ImagesOff(); PizzaOn ();">
+            <img src="media/sabich.jpg" alt="Sabich in a pita" onclick="ImagesOff(); SabichOn ();">
+            <img src="media/strawberry.jpg" alt="Fresh strawberries" onclick="ImagesOff(); StrawberryOn ();">
+            <img src="media/stroop.jpg" alt="Stroop Waffle" onclick="ImagesOff(); StroopOn ();">
+            <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" onclick="ImagesOff(); WatermelonOn ();">
+        </div>
     </section>
-    <div id="thumbnails">
-        <img src="media/pasta1.jpg" alt="Penne alla vodka" onclick="ImagesOff(); PastaOn ();">
-        <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" onclick="ImagesOff(); AcaiOn ();">
-        <img src="media/gelato.jpg" alt="Gelato in a cup" onclick="ImagesOff (); GelatoOn ();"> 
-        <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" onclick="ImagesOff(); HummusOn ();">
-        <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" onclick="ImagesOff(); Pasta2On ();">
-        <img src="media/pizza.jpg" alt="Large Cheese Pizza" onclick="ImagesOff(); PizzaOn ();">
-        <img src="media/sabich.jpg" alt="Sabich in a pita" onclick="ImagesOff(); SabichOn ();">
-        <img src="media/strawberry.jpg" alt="Fresh strawberries" onclick="ImagesOff(); StrawberryOn ();">
-        <img src="media/stroop.jpg" alt="Stroop Waffle" onclick="ImagesOff(); StroopOn ();">
-        <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" onclick="ImagesOff(); WatermelonOn ();">
-    </div>
+    
     <hr>
     <footer>
         <div class="footerimg">

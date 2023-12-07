@@ -1,5 +1,4 @@
 nav{display: flex;
-    font-size: 1em;
 }
 .navlinks{
     padding: 10px;
@@ -13,20 +12,27 @@ nav{display: flex;
 body {
     margin-left: 50px;
     margin-right: 50px;
+    font-family: 'Playfair Display', serif;
 }
 
 .blog{
     display: flex;
 }
+
 img{
-    width: 50%;
-    max-width: 100%;
+    max-width: 50%;
  }
-.blogimg{
+ .blogimg{
+    flex-basis: 40%;
+    margin: 2em;
+    max-width: 100%;
+
+}
+.blogleft{
     flex-basis: 40%;
     text-align: right;
     margin: 2em;
-    width: 100%
+    width: 100%;
 
 }
 .blogtext{
@@ -46,52 +52,89 @@ h1, h2, a {
 
 footer img {
     width: 5%;
-    max-width: 100%;
+}
+footer {
+    clear: both;
 }
 footer div{
     display: flex;
+    flex-wrap: wrap;
 }
 .footerimg {
     display:flex;
+    flex-wrap: wrap;
     justify-content: right;
 }
 
-@media only screen and (max-width: 800px) {
-    nav a {display: 100%;
-        display:block;
-        margin: 10px;
-    }
-    } 
-
-.bio {
-    display: flex;
-}
 .bioimg {
-    flex: 50%;
-    max-width: 1200px;
-    text-align: center;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.slideshow{
+    background-color: #efefef;
+}
+#slideshowimg{
+    margin: 0 auto;
+    width: 800px;
 
 }
-.bioinfo {
-    flex: 50%;
-}
-#slideshow{
+.slidehead{
+    background-color: #efefef;
+    clear: both;
     text-align: center;
-    max-width: 800px;
 }
 #thumbnails {
     display: flex;
     width: 200px;
 }
 #thumbnails img {
-    margin: 10px;
+    margin-right: 10px;
 }
 
 #acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {display: none;}
-.resources{
-    display:flex;
-}
 
+.resources{
+    clear: both;
+}
+.resourcepic{
+    float: left;
+    margin: 20px;
+}
 .center {
     text-align: center;
 }
+
+@media only screen and (max-width: 800px) {
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .bioinfo {
+        clear: both;
+    }
+    .blog {
+        flex-wrap: wrap;
+    }
+    .blogimg {
+        max-width: 300px;
+    }
+    #thumbnails {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    #thumbnails img {
+        margin-bottom: 10px;
+    }
+    #slideshowimg {
+        display: none;
+    }
+    .footerimg {
+        display:block;
+    }
+    } 

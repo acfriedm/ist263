@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dekko&display=swap" rel="stylesheet">
+    <style>
+        #modal {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            width: 300px;
+            padding: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -200px -200px;
+            display: none;
+        }
+        #modal h1{font-family: 'Dekko', cursive;}
+        #container {
+            position: relative;
+            margin: 0 auto;
+            width: 800px;
+        }
+        a {
+            background-color: #ea8b9b;
+            padding: 5px;
+        }
+        #modal-close{
+            text-align: right;
+            margin: 0px;
+        }
+    </style>
+    <script>
+        function openModal () {
+            document.getElementById("modal").style.display = "block";
+        }
+        function closeModal () {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Desserts</h1>
+        <p>
+            Tootsie roll toffee oat cake powder biscuit fruitcake cheesecake shortbread. Croissant sugar plum chocolate cake candy lemon drops liquorice icing soufflé wafer. Lemon drops wafer tart oat cake dessert cookie jelly biscuit powder. Cake chocolate cake macaroon marzipan cheesecake biscuit chocolate cake. Cake donut carrot cake liquorice lemon drops cheesecake wafer. Chocolate cake cookie halvah bear claw cookie carrot cake. Gingerbread jelly donut halvah topping chupa chups dessert chocolate cake. Liquorice macaroon chocolate cake donut sweet. Sesame snaps donut soufflé pastry muffin carrot cake jujubes. Cookie cheesecake dragée jelly beans fruitcake jujubes biscuit cupcake chocolate. Macaroon biscuit sesame snaps donut fruitcake apple pie sesame snaps wafer. Cupcake candy canes jujubes bear claw cake. Sweet sesame snaps dragée gummies tart biscuit tart chocolate cake chocolate bar. Jelly beans jelly beans bonbon bonbon sweet roll pie apple pie liquorice muffin.    
+        </p>
+        <p>
+            Cake gingerbread marshmallow cupcake gingerbread candy cookie. Shortbread liquorice marzipan cake fruitcake tart chocolate. Apple pie marzipan caramels cake tiramisu croissant. Apple pie sweet roll brownie oat cake tart. Marshmallow oat cake macaroon dessert jujubes shortbread sweet roll powder jelly beans. Cotton candy chupa chups cake halvah liquorice croissant pastry gummi bears gingerbread. Jelly beans cheesecake ice cream cake cupcake pastry. Topping chocolate bar chocolate bar jujubes jelly beans gingerbread macaroon topping. Chupa chups cheesecake cheesecake danish pudding macaroon carrot cake. Chocolate chocolate cheesecake lollipop icing cake. Sweet lollipop oat cake sesame snaps pastry donut. Tootsie roll jelly jujubes donut toffee danish biscuit. Oat cake toffee dragée marzipan chocolate tiramisu.
+        </p>
+        <p>
+            Cheesecake lollipop pie gingerbread lollipop. Sugar plum topping sesame snaps liquorice caramels shortbread. Soufflé ice cream halvah pie apple pie. Dragée sesame snaps topping lemon drops shortbread cookie donut gingerbread gummi bears. Sweet pudding chocolate cupcake shortbread croissant. Tiramisu powder soufflé macaroon pastry lollipop chupa chups toffee. Tootsie roll chocolate cake chocolate bar icing chocolate tiramisu. Ice cream chocolate cheesecake fruitcake carrot cake dessert pie brownie. Danish sesame snaps apple pie soufflé tart icing. Cupcake chocolate bar chupa chups candy tiramisu icing danish toffee. Gingerbread cheesecake marzipan apple pie dragée bear claw tart sweet. Jelly beans chupa chups marzipan pastry liquorice biscuit dessert soufflé chupa chups. Topping sweet roll gingerbread cake sesame snaps liquorice oat cake pudding marshmallow.
+        </p>
+        <p><a onclick="openModal()">Subscribe to Our Newsletter</a></p>
+    </div>
+    <div id="modal">
+        <p id="modal-close" onclick="closeModal()">X</p>
+        <h1>Join Subscription List</h1>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input type="submit" class="button" id="Subscribe">
+        </form>
+    </div>
+</body>
+</html>
