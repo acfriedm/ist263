@@ -24,8 +24,7 @@ img{
  }
  .blogimg{
     flex-basis: 40%;
-    margin: 2em;
-    max-width: 100%;
+    max-width: 50%;
 
 }
 .blogleft{
@@ -65,7 +64,6 @@ footer div{
     flex-wrap: wrap;
     justify-content: right;
 }
-
 .bioimg {
     float: left;
     margin-right: 30px;
@@ -73,16 +71,17 @@ footer div{
 }
 
 .slideshow{
+    clear: both;
     background-color: #efefef;
+    margin: 0 auto;
 }
 #slideshowimg{
-    margin: 0 auto;
     width: 800px;
-
+    justify-content: center;
+    margin: 0 auto;
 }
 .slidehead{
     background-color: #efefef;
-    clear: both;
     text-align: center;
 }
 #thumbnails {
@@ -90,10 +89,18 @@ footer div{
     width: 200px;
 }
 #thumbnails img {
-    margin-right: 10px;
+    justify-content: center;
+    margin: 10px;
+    
 }
-
-#acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {display: none;}
+#pasta, #acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {
+    margin: 0 auto;
+    justify-content: center;
+}
+#acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {
+    display: none;
+    margin: 0 auto;
+}
 
 .resources{
     clear: both;
@@ -123,6 +130,10 @@ footer div{
     .blogimg {
         max-width: 300px;
     }
+    .blogleft {
+        justify-content: center;
+        margin: 0px;
+    }
     #thumbnails {
         display: flex;
         flex-wrap: wrap;
@@ -134,7 +145,13 @@ footer div{
     #slideshowimg {
         display: none;
     }
-    .footerimg {
-        display:block;
+    .slideshow, .slidehead{
+        background-color: #ffffff;
+    }
+    .resourcepic{
+        margin: 0px;
+    }
+    footer div img {
+        width: 20px;
     }
     } 
