@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
         function ImagesOff () {
             document.getElementById('pasta').style.display = 'none';
             document.getElementById('acai').style.display = 'none';
@@ -55,85 +65,81 @@
     </script>
 </head>
 <body onload="PastaOn();">
-    <nav>
-        <div class="navimg">
-            <a href="home.html"><img src="media/cusecookslogo.png" alt="Cuse Cooks logo"></a>
-        </div>
-        <div class="navlinks">
-            <a href="home.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
-        </div>
-    </nav> 
-    <hr>
-    <header class="header">
-        <h1>Welcome to Cuse Cooks!</h1>
-        <h2>A blog about your college kitchen.</h3>
-        <p>
-            Whether you live on- or off-campus, I’ve got you covered. This blog is all about how to live a healthy 
-            college lifestyle from eating at the dining hall to grocery shopping on a budget to Sunday meal prepping.
-            Also check out my resource page to learn more about food insecurity in Syracuse and how you can give 
-            back to the local community.
-        </p>
-    </header>
-    <h2>Who is the Chef behind Cuse Cooks?</h2>
-    <main class="bio">
-        <img src="media/arifriedman.jpg" alt="Ari Friedman Headshot" class="bioimg">
-        <h2 class="bioinfo">Hi, I'm Ari!</h2>
-        <p class="bioinfo">
-            I am a senior at Syracuse University studying Information Management and Technology with 
-            a concentration in Web Design and minor in Public Communications.
-        </p>
-        <h2 class="bioinfo">My biggest passion in life is food.</h2>
-        <p class="bioinfo">
-            Over the last year and a half, I had two amazing opportunities to spend time abroad which has 
-            strengthened my love for cooking, baking, and eating while expanding my palette across various cuisines.
-        </p>
-        <p class="bioinfo">
-            I spent the summer between my sophomore and junior year in Tel Aviv, Israel while interning for a food
-            touring company. This spring I spent the semester studying abroad in Florence, Italy, and had the 
-            opportunity to travel to 11 different countries. 
-        </p>
-        <p>
-            As a passionate foodie, I was determined to experience
-            different cultures through food. Every place I visited, I sought after their most popular dish: schnitzel in 
-            Austria, paella in Spain, Bolognese in Italy… you get the idea!
-        </p>
-        <h2>
-            Bascially, I love food, and I want to share that with you!
-        </h2>
-
-    </main>
-    <!--this will be a slideshow of images --> 
-    <section class="slideshow">
-        <h2 class="slidehead">"Phone Eats First" Slideshow</h2>
-        <section id="slideshowimg">
-            <img src="media/pasta1.jpg" alt="Penne alla vodka" id="pasta">
-
-            <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" id="acai">
-            <img src="media/gelato.jpg" alt="Gelato in a cup" id="gelato"> 
-            <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" id="hummus">
-            <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" id="pasta2">
-            <img src="media/pizza.jpg" alt="Large Cheese Pizza" id="pizza">
-            <img src="media/sabich.jpg" alt="Sabich in a pita" id="sabich">
-            <img src="media/strawberry.jpg" alt="Fresh strawberries" id="strawberry">
-            <img src="media/stroop.jpg" alt="Stroop Waffle" id="stroop" >
-            <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" id="watermelon">
-        </section>
-        <div id="thumbnails">
-            <img src="media/pasta1.jpg" alt="Penne alla vodka" onclick="ImagesOff(); PastaOn ();">
-            <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" onclick="ImagesOff(); AcaiOn ();">
-            <img src="media/gelato.jpg" alt="Gelato in a cup" onclick="ImagesOff (); GelatoOn ();"> 
-            <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" onclick="ImagesOff(); HummusOn ();">
-            <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" onclick="ImagesOff(); Pasta2On ();">
-            <img src="media/pizza.jpg" alt="Large Cheese Pizza" onclick="ImagesOff(); PizzaOn ();">
-            <img src="media/sabich.jpg" alt="Sabich in a pita" onclick="ImagesOff(); SabichOn ();">
-            <img src="media/strawberry.jpg" alt="Fresh strawberries" onclick="ImagesOff(); StrawberryOn ();">
-            <img src="media/stroop.jpg" alt="Stroop Waffle" onclick="ImagesOff(); StroopOn ();">
-            <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" onclick="ImagesOff(); WatermelonOn ();">
-        </div>
-    </section>
+    <nav id="navbar" class="sticky">
+        <a href="#main" tabindex="1" class="skip">Skip to Content</a>
+        <img src="media/cusecookslogo.png" alt="Cuse Cooks logo">
+        <a href="resources.html" tabindex="4">Resources</a>
+        <a href="blog.html" tabindex="3">Blog</a>
+        <a class="active" href="home.html" tabindex="2">Home</a>
+    </nav>
+    <section class="content" id="main">
+        <header>
+            <h1 class="mainheader">Welcome to Cuse Cooks!</h1>
+            <h2>A blog about your college kitchen.</h3>
+            <p>
+                Whether you live on- or off-campus, I’ve got you covered. This blog is all about how to live a healthy 
+                college lifestyle from eating at the dining hall to grocery shopping on a budget to Sunday meal prepping.
+                Also check out my resource page to learn more about food insecurity in Syracuse and how you can give 
+                back to the local community.
+            </p>
+        </header>
+        <h2>Who is the Chef behind Cuse Cooks?</h2>
+        <main class="bio">
+            <img src="media/arifriedman.jpg" alt="Ari Friedman Headshot" class="bioimg">
+            <h2 class="bioinfo">Hi, I'm Ari!</h2>
+            <p class="bioinfo">
+                I am a senior at Syracuse University studying Information Management and Technology with 
+                a concentration in Web Design and minor in Public Communications.
+            </p>
+            <h2 class="bioinfo">My biggest passion in life is food.</h2>
+            <p class="bioinfo">
+                Over the last year and a half, I had two amazing opportunities to spend time abroad which has 
+                strengthened my love for cooking, baking, and eating while expanding my palette across various cuisines.
+            </p>
+            <p class="bioinfo">
+                I spent the summer between my sophomore and junior year in Tel Aviv, Israel while interning for a food
+                touring company. This spring I spent the semester studying abroad in Florence, Italy, and had the 
+                opportunity to travel to 11 different countries. 
+            </p>
+            <p>
+                As a passionate foodie, I was determined to experience
+                different cultures through food. Every place I visited, I sought after their most popular dish: schnitzel in 
+                Austria, paella in Spain, Bolognese in Italy… you get the idea!
+            </p>
+            <h2>
+                Bascially, I love food, and I want to share that with you!
+            </h2>
     
+        </main>
+        <!--this will be a slideshow of images --> 
+        <section class="slideshow">
+            <h2 class="slidehead mainheader">Phone Eats First!</h2>
+            <section id="slideshowimg">
+                <img src="media/pasta1.jpg" alt="Penne alla vodka" id="pasta">
+                <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" id="acai">
+                <img src="media/gelato.jpg" alt="Gelato in a cup" id="gelato"> 
+                <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" id="hummus">
+                <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" id="pasta2">
+                <img src="media/pizza.jpg" alt="Large Cheese Pizza" id="pizza">
+                <img src="media/sabich.jpg" alt="Sabich in a pita" id="sabich">
+                <img src="media/strawberry.jpg" alt="Fresh strawberries" id="strawberry">
+                <img src="media/stroop.jpg" alt="Stroop Waffle" id="stroop" >
+                <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" id="watermelon">
+            </section>
+            <div id="thumbnails">
+                <img src="media/pasta1.jpg" alt="Penne alla vodka" onclick="ImagesOff(); PastaOn ();">
+                <img src="media/acai.jpg" alt="Acai bowl in a smoothie cup" onclick="ImagesOff(); AcaiOn ();">
+                <img src="media/gelato.jpg" alt="Gelato in a cup" onclick="ImagesOff (); GelatoOn ();"> 
+                <img src="media/hummus.jpg" alt="Bowl of hummus with fresh herbs" onclick="ImagesOff(); HummusOn ();">
+                <img src="media/pasta2.jpg" alt="Fettuccine with cream sauce" onclick="ImagesOff(); Pasta2On ();">
+                <img src="media/pizza.jpg" alt="Large Cheese Pizza" onclick="ImagesOff(); PizzaOn ();">
+                <img src="media/sabich.jpg" alt="Sabich in a pita" onclick="ImagesOff(); SabichOn ();">
+                <img src="media/strawberry.jpg" alt="Fresh strawberries" onclick="ImagesOff(); StrawberryOn ();">
+                <img src="media/stroop.jpg" alt="Stroop Waffle" onclick="ImagesOff(); StroopOn ();">
+                <img src="media/watermelon.jpg" alt="Fresh, cut watermelon" onclick="ImagesOff(); WatermelonOn ();">
+            </div>
+        </section>
+    </section>
     <hr>
     <footer>
         <div class="footerimg">

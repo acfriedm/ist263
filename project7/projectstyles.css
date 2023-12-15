@@ -1,23 +1,70 @@
-nav{display: flex;
+.skip{
+    background-color: #F76900;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute;
+    left: -999px;
 }
-.navlinks{
-    margin-top: 9%;
-    justify-content: right;
-    text-align: right;
-    font-size: 1.2em;
-    flex-basis: 30%;
+
+.skip:focus {
+    left: 10px;
 }
-.navlinks a {
-    padding: 15px
-}
-.navimg{
-    justify-content: left;
-    flex-basis: 70%;
+
+#navbar {
+    overflow: hidden;
+    background-color: #efefef;
+    margin-left: -5%;
+  }
+
+#navbar img {
+    width: 23%;
+    margin-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+#navbar a {
+    float: right;
+    display: block;
+    color: #000E54;
+    text-align: center;
+    padding: 2.5% 4%;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+#navbar a:hover {
+    background-color: #e7e4e4;
+  }
+  
+#navbar a.active {
+    background-color: #F76900;
+    color: white;
+  }
+  
+.content {
+    padding: 16px;
+    padding-top: 7%;
+    margin-top:10px;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.mainheader {
+    font-size: 40px;
 }
 
 body {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Playfair Display', serif;
 }
 
@@ -99,6 +146,7 @@ footer div{
 }
 #thumbnails img {
     margin: 10px;
+    margin-top: 30px;
     
 }
 #pasta, #acai, #gelato, #hummus, #pasta2, #pizza, #sabich, #strawberry, #stroop, #watermelon {
@@ -121,27 +169,6 @@ footer div{
     text-align: center;
 }
 
-@media only screen and (max-width: 1100px) {
-
-    nav a {
-        display: block;
-        margin-bottom: 10px;
-    }
-    .navlinks a {
-        padding: 0px
-    }
-    nav a img {
-       max-width: 75%;
-    }
-    /*
-    .navlinks a {
-        display: block;
-        margin: auto;
-        padding: 0px;
-        margin-top: 5px;
-    }
-    */
-} 
 
 @media only screen and (max-width: 800px) {
 
@@ -153,7 +180,7 @@ footer div{
     }
     .blog {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: right;
         margin: auto;
     }
     .blogimg {
@@ -161,7 +188,6 @@ footer div{
         margin: auto;
     }
     .blogleft {
-        justify-content: center;
         margin: auto;
     }
     #thumbnails {
@@ -186,3 +212,5 @@ footer div{
         width: 10%;
     }
     } 
+
+  

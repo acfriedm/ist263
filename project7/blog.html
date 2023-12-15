@@ -8,61 +8,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+    </script>
 </head>
 <body>
-    <nav>
-        <div class="navimg">
-            <a href="home.html"><img src="media/cusecookslogo.png" alt="Cuse Cooks logo"></a>
+    <nav id="navbar" class="sticky">
+        <a href="#main" tabindex="1" class="skip">Skip to Content</a>
+        <img src="media/cusecookslogo.png" alt="Cuse Cooks logo">
+        <a href="resources.html" tabindex="4">Resources</a>
+        <a class="active" href="blog.html" tabindex="3">Blog</a>
+        <a href="home.html" tabindex="2">Home</a>
+    </nav>
+    <section class="content" id="main">
+        <h1 class="mainheader center">Welcome to the blog!</h1>
+        <div class="blog">
+            <div class="blogleft">
+                <img class="mealprep blogimg" src="media/mealprep2.jpg" alt="Groceries on a countertop">
+            </div>
+            <div class="blogtext">
+                <h3 class="blogtitle"><a href="blogs/mealprep.html">Meal Prepping 101</a></h3>
+                <p class="blogdescription">
+                    Learn to meal prep from an expert! In this article, 
+                    you will learn 5 key skills to successful meal prepping on a college-friendly budget.
+                    Don't be intimidated; anyone can do it!
+                </p>
+            </div>
         </div>
-        <div class="navlinks">
-            <a href="home.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="resources.html">Resources</a>
+       <div class="blog">
+            <div class="blogleft">
+                <img src="media/chixfajitas2.jpg" class="fajitas blogimg" alt="Chicken fajitas">
+            </div>
+            <div class="blogtext">
+                <h3 class="blogtitle"><a href="blogs/fajitas.html">My Favorite Fajitas</a></h3>
+                <p class="blogdescription">
+                    Two fajitas recipes you HAVE to try. I grew up on these delicious chicken and shrimp fajitas,
+                    and they are now a staple in my college apartment. Easy dish to meal prep that won't break the bank.
+                    Hope you're hungry!
+                </p>
+            </div>
+       </div>
+       <div class="blog">
+            <div class="blogleft">
+                <img class="chili blogimg" src="media/chili.jpg" alt="Pot of chili">
+            </div>
+            <div class="blogtext">
+                <h3 class="blogtitle"><a href="blogs/chili.html">The Ultimate Chili Recipe</a></h3>
+                <p class="blogdescription">
+                    As the weather gets colder and winter quickly approaches, the only food I'm craving is a
+                    hot bowl of chili. Lucky for you, I have the best chili recipe, straight my from boyfriend's
+                    mom's recipe book. Not only is this recipe packed in protein and fiber, the ingredients are
+                    approved by your college budget!
+                </p>
+            </div>
         </div>
-    </nav> 
-    <hr>
-    <h1>Welcome to the blog!</h1>
-    <div class="blog">
-        <div class="blogleft">
-            <img class="mealprep blogimg" src="media/mealprep2.jpg" alt="Groceries on a countertop">
-        </div>
-        <div class="blogtext">
-            <h3 class="blogtitle"><a href="blogs/mealprep.html">Meal Prepping 101</a></h3>
-            <p class="blogdescription">
-                Learn to meal prep from an expert! In this article, 
-                you will learn 5 key skills to successful meal prepping on a college-friendly budget.
-                Don't be intimidated; anyone can do it!
-            </p>
-        </div>
-    </div>
-   <div class="blog">
-        <div class="blogleft">
-            <img src="media/chixfajitas2.jpg" class="fajitas blogimg" alt="Chicken fajitas">
-        </div>
-        <div class="blogtext">
-            <h3 class="blogtitle"><a href="blogs/fajitas.html">My Favorite Fajitas</a></h3>
-            <p class="blogdescription">
-                Two fajitas recipes you HAVE to try. I grew up on these delicious chicken and shrimp fajitas,
-                and they are now a staple in my college apartment. Easy dish to meal prep that won't break the bank.
-                Hope you're hungry!
-            </p>
-        </div>
-   </div>
-   <div class="blog">
-        <div class="blogleft">
-            <img class="chili blogimg" src="media/chili.jpg" alt="Pot of chili">
-        </div>
-        <div class="blogtext">
-            <h3 class="blogtitle"><a href="blogs/chili.html">The Ultimate Chili Recipe</a></h3>
-            <p class="blogdescription">
-                As the weather gets colder and winter quickly approaches, the only food I'm craving is a
-                hot bowl of chili. Lucky for you, I have the best chili recipe, straight my from boyfriend's
-                mom's recipe book. Not only is this recipe packed in protein and fiber, the ingredients are
-                approved by your college budget!
-            </p>
-        </div>
-    </div>
-
+    </section>
     <hr>
     <footer>
         <div class="footerimg">
