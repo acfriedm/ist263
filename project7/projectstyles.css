@@ -58,6 +58,10 @@
     padding-top: 60px;
   }
 
+.logotitle{
+    display:none;
+}
+
 .mainheader {
     font-size: 40px;
 }
@@ -171,12 +175,15 @@ footer div{
 
 
 @media only screen and (max-width: 800px) {
-    #navbar img {
-        width: 30%;
-      }
-
     img {
         max-width: 100%;
+    }
+    .logo {
+        display: none;
+    }
+    .logotitle {
+        display: inline;
+        width: 25%;
     }
     .bioinfo {
         clear: both;
