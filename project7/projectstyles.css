@@ -171,6 +171,9 @@ footer div{
 
 
 @media only screen and (max-width: 800px) {
+    #navbar img {
+        width: 35%;
+      }
 
     img {
         max-width: 100%;
@@ -182,7 +185,6 @@ footer div{
         flex-wrap: wrap;
         justify-content: right;
         margin-left: -100px;
-        margin-right: -50px;
         text-align: center;
     }
     .blogimg {
